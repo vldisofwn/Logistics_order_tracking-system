@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>位置经纬度 + 驾车规划路线</title>
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+      <!-- 重要，请到 https://console.amap.com 申请 JS API 的 key和密钥 -->
+      <script> 
+        window._AMapSecurityConfig = {
+          securityJsCode: 'fc5d1077662ebcdcbd1d3691fb1e0808',
+        }
+      </script>
+      
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=e9054a1dd872eaeec70119c2160b5fa5&plugin=AMap.Driving"></script>
+</head>
+<body>
+<div id="container"></div>
+<div id="panel"></div>
+<script src="./index.js"></script>
+</body>
+</html>

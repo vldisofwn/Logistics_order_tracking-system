@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: logistics_tracking
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+  # QQ邮箱
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2731340103@qq.com
+    password: wxxgdxtxkassdegh
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+# 高德地图配置
+amap:
+  key: c57de9b62932664390b8899ba8ce21ae
+  geocodeUrl: https://restapi.amap.com/v3/geocode/geo
+  regeoUrl: https://restapi.amap.com/v3/geocode/regeo
+  distanceUrl: https://restapi.amap.com/v3/distance
+  drivingUrl: https://restapi.amap.com/v3/direction/driving
+  routeUrl: https://restapi.amap.com/v3/direction/driving
+  directionUrl: https://restapi.amap.com/v3/direction/driving
+
+# 日志配置
+logging:
+  level:
+    com.logistics.tracking: DEBUG 
+    org.springframework.web: INFO 

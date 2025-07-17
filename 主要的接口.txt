@@ -1,0 +1,36 @@
+
+重点接口如下
+
+查询订单地理位置接口
+http://localhost:8080/api/orders/{orderId}/tracking
+查询全部订单信息
+http://127.0.0.1:8080/api/orders
+
+查询根据订单号查询订单信息
+http://127.0.0.1:8080/api/orders/orderId
+路径规划接口，根据坐标进行规划路线
+获取到起点和终点的坐标然后传入js中即可
+
+AOP日志接口
+http://127.0.0.1:8080/api/operation-logs
+
+JS api key：e9054a1dd872eaeec70119c2160b5fa5
+securityJsCode：fc5d1077662ebcdcbd1d3691fb1e0808	
+
+
+使用条件：
+安装redis mongdb jdk17
+mongdb创建数据库logistics_tracking
+高德地图api key
+Qq邮箱秘钥
+
+
+快递下单
+快递实时位置追踪
+物流状态更新
+配送员管理
+
+注意api有限制
+
+
+---
